@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: url('key.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding : 20px 100px;
+    background: transparent ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo{
+    font-size: 32px;
+    background-color: #ffbb00;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.navbar a
+{
+    position: relative;
+   
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   margin-left: 40px;
+   font-weight: 700;
+
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 18%;
+    background: #ffbb00;
+    transition: .3s;
+
+
+}
+.navbar a:hover::before{
+    width: 100%;
+
+}
+/* mam se doubt */      
+.welcome{
+    background-color: #ffbb00;
+    width: fit-content;
+    margin-left: 40%;
+    border-radius: 10px 10px 10px 10px;
+    
+    
+}
+
+.book{
+    background-color: #ffbb00;
+    width: fit-content;
+    margin-left: 40%;
+    border-radius: 10px 10px 10px 10px;
+}
+.content{
+    width: 90%;
+    position: absolute;
+    top: 100%;
+    transform: translateY(100%);
+    text-align: center;
+    color: #000000;
+}
+.content h1{
+    font-size: 100px;
+    margin-top: 110px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 700;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fcc900;
+    background: transparent;
+    color:black ;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #fcc900;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+
